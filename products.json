@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Classic T-Shirt",
+        "price": 19.99,
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Clothing"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Headphones",
+        "price": 89.99,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Electronics"
+    },
+    {
+        "id": 3,
+        "name": "Coffee Mug",
+        "price": 12.99,
+        "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Home"
+    },
+    {
+        "id": 4,
+        "name": "Running Shoes",
+        "price": 65.99,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Footwear"
+    },
+    {
+        "id": 5,
+        "name": "Backpack",
+        "price": 45.99,
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Accessories"
+    },
+    {
+        "id": 6,
+        "name": "Smart Watch",
+        "price": 199.99,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "category": "Electronics"
+    }
+]
