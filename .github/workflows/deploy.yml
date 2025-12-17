@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/darkmoon' || github.ref == 'refs/heads/darkmoon')
+        
+      - name: Send Deployment Notification
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/darkmoon' || github.ref == 'refs/heads/darkmoon')
+        run: |
+          echo "Deployment successful! Your changes are now live."
+          echo "Website URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          
+      - name: Deploy Status
+        if: always()
+        run: |
+          if [ ${{ job.status }} == 'success' ]; then
+            echo "✅ Deployment completed successfully!"
+          else
+            echo "❌ Deployment failed!"
+          fi
